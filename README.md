@@ -1,5 +1,5 @@
 # Pathfindfer
-## A program which, finds the goal in a given area and generates an optimal path to it from the start location
+## A program which finds the goal in a given area and generates an optimal path to it from the start location
 
 ### This project is split up in 4 parts:
 

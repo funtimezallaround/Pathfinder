@@ -3,7 +3,6 @@ import java.util.*;
 public class RunPathing {
     static Scanner s = new Scanner(System.in);
     static Area area = new Area();
-    static Brain AIden = new Brain();
 
     public static void main(String[] args) {
         System.out.println("Welcome to the Pathfinding Project");
@@ -182,6 +181,7 @@ public class RunPathing {
             }
         } while (menuOpt != 6);
 
+        Brain AIden = new Brain();
         // TELL AIDEN TO SEARCH FOR THE END AND ONCE ITS FOUND, TELL IT TO FIND THE BEST
         // PATH:
         AIden.search(area);

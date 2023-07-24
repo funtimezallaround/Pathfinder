@@ -23,17 +23,17 @@
 ### In-depth pathfinding explanation:
 
   1. After creating the area, start, end, and all the obstacles, a pathfinder, named AIden is created.
-    - AIden begins at the start and checks each cardinal direction for an obstacle or for a boundary edge.
-    - A *random* direction which is not blocked off is selected and AIden moves in that direction.
-    - The move is added to a list to remember the path taken and the current position of AIden is printed out
-    - The process repeats until the end in in one of the cardinal directions of AIden. In this case, The direction chosen is not random, but the direction the goal is in
-    - Once Aiden reaches the end, this stage is completed.
+     - AIden begins at the start and checks each cardinal direction for an obstacle or for a boundary edge.
+     - A *random* direction which is not blocked off is selected and AIden moves in that direction.
+     - The move is added to a list to remember the path taken and the current position of AIden is printed out
+     - The process repeats until the end in in one of the cardinal directions of AIden. In this case, The direction chosen is not random, but the direction the goal is in
+     - Once Aiden reaches the end, this stage is completed.
   1. Next, the path taken is traced to get the coordinates of the end.
   1. AIden is moved back to the start, and an algorithm similar to the A* algorithm is followed:
-    - Each cardinal direction is checked for an obstacle or boundary edge
-    - A list is created, containing the cells in the directions which are not blocked off and have not been evaluated
-    - The cells are then evaluated, and their parent cell set as the current cell, and the best cell is selected and then AIden repeats the process for the new location, always selelcting the best cell.
-    - This repeats until the end is reached and an optimal path has been generated.
+     - Each cardinal direction is checked for an obstacle or boundary edge
+     - A list is created, containing the cells in the directions which are not blocked off and have not been evaluated
+     - The cells are then evaluated, and their parent cell set as the current cell, and the best cell is selected and then AIden repeats the process for the new location, always selelcting the best cell.
+     - This repeats until the end is reached and an optimal path has been generated.
   1. The optimal path is printed out to the user and the program ends.
 
 
